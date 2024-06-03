@@ -1,0 +1,220 @@
+###############################################################################
+# Configuration file for auto-updating pull counts.
+# Idea is we shouldn't care which fight is being updated, just that
+# we recognize what fight it is and where things should be recorded.
+###############################################################################
+
+# FFLOGS Public Key
+# This is needed to use URLs and endpoints, passed on as a URL parameter.
+public_key: "YOUR PUBLIC KEY GOES HERE"
+
+# Put in the folder you want files to save to here.
+# Format of folder looks like this:
+# C:/Path/To The/Folder_Name/Here/
+# Fights will get subdivided into their own folders from here.
+pull_location_folder: "YOUR PULL FOLDER PATH GOES HERE"
+
+# This is effectively an up-front whitelist to say "we support these fights"
+supported_fights: &fights
+  - top
+  - dsw
+  - tea
+  - ucob
+  - uwu
+  - e10s
+  - p1s
+  - p2s
+  - p3s
+  - p4s
+  - p5s
+  - p6s
+  - p7s
+  - p8s
+  - sce
+
+###############################################################################
+# ULTIMATE FIGHTS
+# All phases in this section map according to what FFLogs returns when
+# you check for a phase.
+# The main exception is TEA on two accounts:
+# - Limit Cut gets bunched in with Living Liquid phase
+# - Perfect Alexander gets bunched in with Alexander Prime phase
+###############################################################################
+top:
+  full_name: The Omega Protocol
+  fight_code: TOP
+  difficulty: Ultimate
+  zone_name: The Omega Protocol (Ultimate)
+  boss_id: 1068
+  phases:
+    1: 
+      name: Omega
+    2: 
+      name: Omega-M/F
+    3: 
+      name: Omega Reconfigured
+    4:
+      name: Blue Screen
+    5:
+      name: "Run: Dynamis"
+    6:
+      name: Alpha Omega
+dsw:
+  full_name: Dragonsong War
+  fight_code: DSW
+  difficulty: Ultimate
+  zone_name: Dragonsong's Reprise (Ultimate)
+  boss_id: 0
+  phases:
+    1: 
+      name: The Vault Knights
+    2:
+      name: King Thordan
+    3: 
+      name: Nidhogg
+    4:
+      name: The Eyes
+    5:
+      name: King Thordan II
+    6: 
+      name: Double Dragon
+    7:
+      name: The Dragon King 
+tea:
+  full_name: The Epic of Alexander
+  fight_code: TEA
+  difficulty: Ultimate
+  zone_name: Stub
+  boss_id: 0
+  phases:
+    1:
+      name: Living Liquid
+    1.5:
+      name: Limit Cut
+    2:
+      name: Brute Justice and Cruise Chaser
+    3:
+      name: Alexander Prime
+    4:
+      name: Perfect Alexander
+ucob:
+  full_name: The Unending Coil of Bahamut
+  fight_code: UCoB
+  difficulty: Ultimate
+  zone_name: Stub
+  boss_id: 1039
+  phases:
+    1:
+      name: Twintania
+    2:
+      name: Nael deus Darnus
+    3:
+      name: Bahamut Prime
+    4:
+      name: Triple Threat
+    5:
+      name: Reborn!
+uwu:
+  full_name: The Weapon's Refrain
+  fight_code: UWU
+  difficulty: Ultimate
+  zone_name: Stub
+  boss_id: 1042
+  phases:
+    1:
+      name: Garuda
+    2:
+      name: Ifrit
+    3:
+      name: Titan
+    4:
+      name: Magitek Bits
+    5:
+      name: The Ultima Weapon
+
+###############################################################################
+# SAVAGE FIGHTS - Pandaemonium
+# All currently available savage fights in 6.x
+###############################################################################
+e10s:
+  full_name: Shadowkeeper
+  fight_code: E10S
+  difficulty: Savage
+  zone_name: "Eden's Promise: Litany (Savage"
+  boss_id: 0
+p1s:
+  full_name: Erichthonios
+  fight_code: P1S
+  difficulty: Savage
+  zone_name: "Asphodelos: The First Circle (Savage)"
+  boss_id: 0
+p2s:
+  full_name: Hippokampus
+  fight_code: P2S
+  difficulty: Savage
+  zone_name: "Asphodelos: The Second Circle (Savage)"
+  boss_id: 0
+p3s:
+  full_name: Phoinix
+  fight_code: P3S
+  difficulty: Savage
+  zone_name: "Asphodelos: The Third Circle (Savage)"
+  boss_id: 0
+p4s:
+  full_name: Hesperos
+  fight_code: P4S
+  difficulty: Savage
+  zone_name: "Asphodelos: The Fourth Circle (Savage)"
+  boss_id: 0
+p5s:
+  full_name: Proto-Carbuncle
+  fight_code: P5S
+  difficulty: Savage
+  zone_name: "Abyssos: The Fifth Circle (Savage)"
+  boss_id: 83
+p6s:
+  full_name: Hegemone
+  fight_code: P6S
+  difficulty: Savage
+  zone_name: "Abyssos: The Sixth Circle (Savage)"
+  boss_id: 0
+p7s:
+  full_name: NOT YET IMPLEMENTED
+  fight_code: P7S
+  difficulty: Savage
+  zone_name: "Abyssos: The Seventh Circle (Savage)"
+  boss_id: 0
+p8s:
+  full_name: NOT YET IMPLEMENTED
+  fight_code: P8S
+  difficulty: Savage
+  zone_name: "Abyssos: The Eighth Circle (Savage)"
+  boss_id: 0
+p9s:
+  full_name: NOT YET IMPLEMENTED
+  fight_code: P9S
+  difficulty: Savage
+  zone_name: Stub
+  boss_id: 0
+p10s:
+  full_name: NOT YET IMPLEMENTED
+  fight_code: P10S
+  difficulty: Savage
+  zone_name: Stub
+  boss_id: 0
+p11s:
+  full_name: NOT YET IMPLEMENTED
+  fight_code: P11S
+  difficulty: Savage
+  zone_name: Stub
+  boss_id: 0
+p12s:
+  full_name: NOT YET IMPLEMENTED
+  fight_code: P12S
+  difficulty: Savage
+sce:
+  full_name: Barbariccia
+  fight_code: SCE
+  difficulty: Extreme
+  zone_name: "Storm's Crown (Extreme)"
+  boss_id: 1066
